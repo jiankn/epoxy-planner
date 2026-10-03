@@ -21,8 +21,8 @@
   </header>
   <section id="install">
     <h2>Install and run a batch</h2>
-    <p>Download <a href="https://github.com/jiankn/epoxy-planner/releases/download/v@@VERSION@@/epoxy-planner-@@VERSION@@.tgz">the v@@VERSION@@ package archive</a> from the release and install it. Node.js 20 or later is required. The first npm registry release is pending.</p>
-    <pre><code>npm install ./epoxy-planner-@@VERSION@@.tgz
+    <p>Install <a href="https://www.npmjs.com/package/epoxy-planner">epoxy-planner v@@VERSION@@ from npm</a>. Node.js 20 or later is required. The <a href="https://github.com/jiankn/epoxy-planner/releases/download/v@@VERSION@@/epoxy-planner-@@VERSION@@.tgz">release archive</a> provides the same tested package for direct installation.</p>
+    <pre><code>npm install epoxy-planner@@@VERSION@@
 npx --no-install epoxy-planner jobs.json --format csv &gt; estimates.csv</code></pre>
     <p><a href="./jobs.json">Download an example job list</a> with a rectangular casting, a river table and a round mold. All calculations run locally; the CLI makes no network requests.</p>
     <p>For a visual check of the measurements and planning assumptions before you enter a batch, use the <a href="https://epoxyplanner.com/epoxy-calculator/">Epoxy Planner calculator</a>.</p>
