@@ -1,0 +1,21 @@
+{
+  "name": "epoxy-planner",
+  "version": "0.1.0",
+  "description": "Unit-explicit epoxy volume estimates and a JSON-to-CSV batch CLI for fabrication job lists.",
+  "type": "module",
+  "exports": "./src/index.js",
+  "bin": { "epoxy-planner": "./bin/epoxy-planner.js" },
+  "files": ["src", "bin", "examples", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "homepage": "https://epoxyplanner.com/epoxy-calculator/",
+  "repository": { "type": "git", "url": "git+https://github.com/jiankn/epoxy-planner.git" },
+  "bugs": { "url": "https://github.com/jiankn/epoxy-planner/issues" },
+  "keywords": ["epoxy", "resin", "volume", "fabrication", "river-table", "calculator", "cli"],
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build-docs.mjs",
+    "verify:package": "node scripts/verify-package.mjs",
+    "prepublishOnly": "npm test && npm run build && npm run verify:package"
+  }
+}

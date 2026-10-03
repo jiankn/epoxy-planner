@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Rectangular casting",
+    "kind": "rectangle", "unit": "cm",
+    "length": 60, "width": 30, "depth": 1,
+    "wastePercent": 10,
+    "price": { "per": "liter", "amount": 28, "currency": "USD" }
+  },
+  {
+    "name": "River table with equal-length width samples",
+    "kind": "river", "unit": "in",
+    "length": 60, "depth": 1.5, "segmentWidths": [4, 6, 5, 7],
+    "wastePercent": 10, "seepagePercent": 8, "sealCoatPercent": 5,
+    "price": { "per": "us-gallon", "amount": 90, "currency": "USD" }
+  },
+  {
+    "name": "Round mold",
+    "kind": "round", "unit": "mm", "diameter": 150, "depth": 10,
+    "wastePercent": 12
+  }
+]
